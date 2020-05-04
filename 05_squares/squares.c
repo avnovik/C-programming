@@ -38,9 +38,9 @@ void squares(int size1, int x_offset, int y_offset, int size2) {
     int w = max(size1, x_offset, size2);
   //int h = size1 + y_offset + size2; //compute the max of size1 and (y_offset + size2).  Call this h
     int h = max(size1,y_offset,size2);
-  for (int y = 0; y <= h; y++)//count from 0 to h. Call the number you count with y
+  for (int y = 0; y < h; y++)//count from 0 to h. Call the number you count with y
   {
-    for (int x = 0; x <= w; x++) //count from 0 to w. Call the number you count with x
+    for (int x = 0; x < w; x++) //count from 0 to w. Call the number you count with x
     {
       //check if  EITHER
       if (((x >= x_offset && x < (x_offset + size2)) && (y == y_offset || y == (y_offset + size2 - 1))) ||  
@@ -62,8 +62,8 @@ void squares(int size1, int x_offset, int y_offset, int size2) {
       else //else print a space
         printf(" ");
     }
-    //when you finish counting x from 0 to w, 
-    printf("\n");//print a newline
+//    if (y >= 0 && y < h)	    //when you finish counting x from 0 to w, 
+    	printf("\n");//print a newline
   }
 }
 
