@@ -39,5 +39,19 @@ void retirement (int startAge, double initial, retire_info working, retire_info 
     }
 }
 
+int main (void) {
+    retire_info working;
+    retire_info retired;
+
+    working.months = 489;
+    working.contribution = 1000;
+    working.rate_of_return = (0.045/12);
+
+    retired.months = 384;
+    retired.contribution = 4000;
+    retired.rate_of_return = (0.01/12);
+
+    retirement(Age, Saving, working, retired);
+}
 
 
