@@ -39,7 +39,8 @@ void retirement (int startAge, double initial, retire_info working, retire_info 
     }
 }
 
-int main (void) {
+int main (void)
+{
     retire_info working;
     retire_info retired;
 
