@@ -5,8 +5,6 @@
 
 
 void assert_card_valid(card_t c) {
-
-
 }
 
 const char * ranking_to_string(hand_ranking_t r) {
