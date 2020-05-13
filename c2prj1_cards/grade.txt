@@ -1,46 +1,37 @@
-Grading at Wed May 13 15:36:38 UTC 2020
+Grading at Wed May 13 17:10:24 UTC 2020
 Compiling cards.c
 cards.c: In function ‘value_letter’:
-cards.c:41:20: error: comparison between pointer and integer [-Werror]
-   else if (c.value == "Jack") 
-                    ^
-cards.c:41:20: error: comparison with string literal results in unspecified behavior [-Werror=address]
-cards.c:43:20: error: comparison between pointer and integer [-Werror]
-   else if (c.value == "Queen") 
-                    ^
-cards.c:43:20: error: comparison with string literal results in unspecified behavior [-Werror=address]
-cards.c:45:20: error: comparison between pointer and integer [-Werror]
-   else if (c.value == "King") 
-                    ^
-cards.c:45:20: error: comparison with string literal results in unspecified behavior [-Werror=address]
-cards.c:47:20: error: comparison between pointer and integer [-Werror]
-   else if (c.value == "Ace") 
-                    ^
-cards.c:47:20: error: comparison with string literal results in unspecified behavior [-Werror=address]
-cards.c: In function ‘suit_letter’:
-cards.c:54:14: error: comparison between pointer and integer [-Werror]
-   if (c.suit == "c")
+cards.c:57:14: error: return makes integer from pointer without a cast [-Werror=int-conversion]
+       return ("J"); break;
               ^
-cards.c:54:14: error: comparison with string literal results in unspecified behavior [-Werror=address]
-cards.c:56:19: error: comparison between pointer and integer [-Werror]
-   else if (c.suit == "d")
-                   ^
-cards.c:56:19: error: comparison with string literal results in unspecified behavior [-Werror=address]
-cards.c:58:19: error: comparison between pointer and integer [-Werror]
-   else if (c.suit == "h")
-                   ^
-cards.c:58:19: error: comparison with string literal results in unspecified behavior [-Werror=address]
-cards.c:60:18: error: comparison between pointer and integer [-Werror]
-   else if(c.suit == "s")
-                  ^
-cards.c:60:18: error: comparison with string literal results in unspecified behavior [-Werror=address]
-cards.c:61:11: error: return makes integer from pointer without a cast [-Werror=int-conversion]
-     return("s");
-           ^
-cards.c: In function ‘ranking_to_string’:
-cards.c:34:1: error: control reaches end of non-void function [-Werror=return-type]
- }
- ^
+cards.c:59:14: error: return makes integer from pointer without a cast [-Werror=int-conversion]
+       return ("Q"); break;
+              ^
+cards.c:61:14: error: return makes integer from pointer without a cast [-Werror=int-conversion]
+       return ("K"); break;
+              ^
+cards.c:63:14: error: return makes integer from pointer without a cast [-Werror=int-conversion]
+       return ("A"); break;
+              ^
+cards.c:65:14: error: return makes integer from pointer without a cast [-Werror=int-conversion]
+       return ("?");
+              ^
+cards.c: In function ‘suit_letter’:
+cards.c:74:14: error: return makes integer from pointer without a cast [-Werror=int-conversion]
+       return ("s"); break;
+              ^
+cards.c:76:14: error: return makes integer from pointer without a cast [-Werror=int-conversion]
+       return ("h"); break;
+              ^
+cards.c:78:14: error: return makes integer from pointer without a cast [-Werror=int-conversion]
+       return ("d"); break;
+              ^
+cards.c:80:14: error: return makes integer from pointer without a cast [-Werror=int-conversion]
+       return ("c"); break;
+              ^
+cards.c:82:14: error: return makes integer from pointer without a cast [-Werror=int-conversion]
+       return ("?");
+              ^
 cc1: all warnings being treated as errors
 Could not compile your card.c!
 
