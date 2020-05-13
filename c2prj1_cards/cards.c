@@ -52,17 +52,17 @@ char value_letter(card_t c) {
     case 9: 
       return (c.value + 48); break;
     case 10: 
-      return 48; break;
+      return (48); break;
     case VALUE_JACK: 
-      return "J"; break;
+      return 'J'; break;
     case VALUE_QUEEN: 
-      return "Q); break;
+      return 'Q'; break;
     case VALUE_KING: 
-      return "K"; break;
+      return 'K'; break;
     case VALUE_ACE: 
-      return "A"; break;
+      return 'A'; break;
     default: 
-      return "?";
+      return '?';
   }
 }
 
@@ -71,15 +71,15 @@ char suit_letter(card_t c) {
   assert_card_valid(c);
   switch (c.suit) {
     case SPADES:
-      return "s"; break;
+      return 's'; break;
     case HEARTS:
-      return "h"; break;
+      return 'h'; break;
     case DIAMONDS:
-      return "d"; break;
+      return 'd'; break;
     case CLUBS:
-      return "c"; break;
+      return 'c'; break;
     default: 
-      return "?";
+      return '?';
   } 
 }
 
