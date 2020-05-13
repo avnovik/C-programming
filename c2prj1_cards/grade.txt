@@ -1,45 +1,6 @@
-Grading at Wed May 13 17:13:11 UTC 2020
+Grading at Wed May 13 17:18:16 UTC 2020
 Compiling cards.c
-cards.c: In function ‘value_letter’:
-cards.c:57:14: error: return makes integer from pointer without a cast [-Werror=int-conversion]
-       return "J"; break;
-              ^
-cards.c:59:14: error: missing terminating " character [-Werror]
-       return "Q); break;
-              ^
-cards.c:59:7: error: missing terminating " character
-       return "Q); break;
-       ^
-cards.c:60:5: error: expected expression before ‘case’
-     case VALUE_KING: 
-     ^
-cards.c:63:14: error: return makes integer from pointer without a cast [-Werror=int-conversion]
-       return "A"; break;
-              ^
-cards.c:65:14: error: return makes integer from pointer without a cast [-Werror=int-conversion]
-       return "?";
-              ^
-cards.c: In function ‘suit_letter’:
-cards.c:74:14: error: return makes integer from pointer without a cast [-Werror=int-conversion]
-       return "s"; break;
-              ^
-cards.c:76:14: error: return makes integer from pointer without a cast [-Werror=int-conversion]
-       return "h"; break;
-              ^
-cards.c:78:14: error: return makes integer from pointer without a cast [-Werror=int-conversion]
-       return "d"; break;
-              ^
-cards.c:80:14: error: return makes integer from pointer without a cast [-Werror=int-conversion]
-       return "c"; break;
-              ^
-cards.c:82:14: error: return makes integer from pointer without a cast [-Werror=int-conversion]
-       return "?";
-              ^
-cards.c: In function ‘value_letter’:
-cards.c:67:1: error: control reaches end of non-void function [-Werror=return-type]
- }
- ^
-cc1: all warnings being treated as errors
-Could not compile your card.c!
+Testing card_from_letters
+Failed
 
 Overall Grade: FAILED
