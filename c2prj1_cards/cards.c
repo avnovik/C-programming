@@ -12,64 +12,86 @@ void assert_card_valid(card_t c) {
 const char * ranking_to_string(hand_ranking_t r) {
   switch (r) {
     case 0:
-      printf("STRAIGHT_FLUSH\n"); break;
+      return "STRAIGHT_FLUSH"; break; 
     case 1:  
-      printf("FOUR_OF_A_KIND\n"); break;
+      return "FOUR_OF_A_KIND"; break;
     case 2:  
-      printf("FULL_HOUSE\n"); break;
+      return "FULL_HOUSE"; break;
     case 3:  
-      printf("FLUSH\n"); break;
+      return "FLUSH"; break;
     case 4:  
-      printf("STRAIGHT\n"); break;
+      return "STRAIGHT"; break;
     case 5:  
-      printf("THREE_OF_A_KIND\n"); break;
+      return "THREE_OF_A_KIND"; break;
     case 6:  
-      printf("TWO_PAIR\n"); break;
+      return "TWO_PAIR"; break;
     case 7:  
-      printf("PAIR\n"); break;
+      return "PAIR"; break;
     default:  
-      printf("NOTHING\n"); break;
+      return "NOTHING"; break;
   }
-  //return "";
 }
 
 char value_letter(card_t c) {
-  if (c.value >= 2 && c.value <= 9)
-    return(48 + c.value);
-  else if (c.value == 10)
-    return(48);
-  else if (c.value == "Jack") 
-    return(74);
-  else if (c.value == "Queen") 
-    return(81);
-  else if (c.value == "King") 
-    return(75);
-  else if (c.value == "Ace") 
-    return(65);
-  return (c.value);  //???? maybe 0 ????
+  assert_card_valid(c);
+  switch (c.value) {
+    case 2: 
+      return (c.value + 48); break;
+    case 3: 
+      return (c.value + 48); break;
+    case 4: 
+      return (c.value + 48); break;
+    case 5: 
+      return (c.value + 48); break;
+    case 6: 
+      return (c.value + 48); break;
+    case 7: 
+      return (c.value + 48); break;
+    case 8: 
+      return (c.value + 48); break;
+    case 9: 
+      return (c.value + 48); break;
+    case 10: 
+      return (48); break;
+    case VALUE_JACK: 
+      return ("J"); break;
+    case VALUE_QUEEN: 
+      return ("Q"); break;
+    case VALUE_KING: 
+      return ("K"); break;
+    case VALUE_ACE: 
+      return ("A"); break;
+    default: 
+      return ("?");
+  }
 }
 
 
 char suit_letter(card_t c) {
-  if (c.suit == "c")
-    return(99);
-  else if (c.suit == "d")
-    return(100);
-  else if (c.suit == "h")
-    return(104);
-  else if(c.suit == "s")
-    return("s");
-  else
-    return 0;  
+  assert_card_valid(c);
+  switch (c.suit) {
+    case SPADES:
+      return ("s"); break;
+    case HEARTS:
+      return ("h"); break;
+    case DIAMONDS:
+      return ("d"); break;
+    case CLUBS:
+      return ("c"); break;
+    default: 
+      return ("?");
+  } 
 }
 
-
 void print_card(card_t c) {
-
+  printf("%c%c",value_letter(c),suit_letter(c));
 }
 
 card_t card_from_letters(char value_let, char suit_let) {
   card_t temp;
+  temp.value = value_let;
+  temp.suit = suit_let;
+  assert_card_valid(temp);
   return temp;
 }
 
@@ -77,3 +99,4 @@ card_t card_from_num(unsigned c) {
   card_t temp;
   return temp;
 }
+
