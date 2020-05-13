@@ -89,7 +89,7 @@ card_t card_from_letters(char value_let, char suit_let) {
   card_t temp;
   
   if (value_let >= '1' && value_let <= '9')
-    temp.value = temp.value - '0';
+    temp.value = value_let - '0';
   else if (value_let == '0')
     temp.value = 10;
   else {
