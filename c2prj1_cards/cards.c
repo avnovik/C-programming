@@ -33,7 +33,6 @@ const char * ranking_to_string(hand_ranking_t r) {
 }
 
 char value_letter(card_t c) {
-  assert_card_valid(c);
   switch (c.value) {
     case 2: 
       return (c.value + 48); break;
@@ -68,7 +67,6 @@ char value_letter(card_t c) {
 
 
 char suit_letter(card_t c) {
-  assert_card_valid(c);
   switch (c.suit) {
     case SPADES:
       return 's'; break;
@@ -89,8 +87,15 @@ void print_card(card_t c) {
 
 card_t card_from_letters(char value_let, char suit_let) {
   card_t temp;
-  temp.value = value_let;
-  temp.suit = suit_let;
+  
+  if (value_let >= '1' && value_let <= '9')
+    temp.value = temp.value - '0';
+  else if (value_let == '0')
+    temp.value = 10;
+  else {
+    temp.value = value_let;
+  }
+  temp.suit = suit_let;  
   assert_card_valid(temp);
   return temp;
 }
