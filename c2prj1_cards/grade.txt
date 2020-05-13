@@ -1,6 +1,10 @@
-Grading at Wed May 13 17:18:16 UTC 2020
+Grading at Wed May 13 23:45:48 UTC 2020
 Compiling cards.c
-Testing card_from_letters
-Failed
+cards.c: In function ‘card_from_letters’:
+cards.c:92:22: error: ‘temp.value’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+     temp.value = temp.value - '0';
+                      ^
+cc1: all warnings being treated as errors
+Could not compile your card.c!
 
 Overall Grade: FAILED
