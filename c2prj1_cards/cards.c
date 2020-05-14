@@ -93,9 +93,26 @@ card_t card_from_letters(char value_let, char suit_let) {
   else if (value_let == '0')
     temp.value = 10;
   else {
-    temp.value = value_let;
+    switch (value_let) {
+      case 'A': temp.value = VALUE_ACE; break;
+      case 'K': temp.value = VALUE_KING; break;
+      case 'Q': temp.value = VALUE_JACK; break;
+      case 'J': temp.value = VALUE_JACK; break;
+    }
   }
-  temp.suit = suit_let;  
+  
+  switch (suit_let) {
+    case 's':
+      temp.suit = SPADES; break;
+    case 'h':
+      temp.suit = HEARTS; break;
+    case 'd':
+      temp.suit = DIAMONDS; break;
+    case 'c':
+      temp.suit = CLUBS; break;
+    default:
+      temp.suit = NUM_SUITS; break;
+  } 
   assert_card_valid(temp);
   return temp;
 }
