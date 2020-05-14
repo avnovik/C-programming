@@ -96,7 +96,7 @@ card_t card_from_letters(char value_let, char suit_let) {
     switch (value_let) {
       case 'A': temp.value = VALUE_ACE; break;
       case 'K': temp.value = VALUE_KING; break;
-      case 'Q': temp.value = VALUE_JACK; break;
+      case 'Q': temp.value = VALUE_QUEEN; break;
       case 'J': temp.value = VALUE_JACK; break;
     }
   }
