@@ -1,6 +1,10 @@
-Grading at Wed May 13 23:47:48 UTC 2020
+Grading at Thu May 14 09:14:16 UTC 2020
 Compiling cards.c
 Testing card_from_letters
+For card_from_letters('Q','c'), I expected Qc but got Jc
+For card_from_letters('Q','d'), I expected Qd but got Jd
+For card_from_letters('Q','h'), I expected Qh but got Jh
+For card_from_letters('Q','s'), I expected Qs but got Js
 Failed
 
 Overall Grade: FAILED
