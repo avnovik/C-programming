@@ -1,0 +1,57 @@
+Ks Kh 0c 6d 8h 6h 4s; 0s Kh Kc 7d 6d 6h 9c
+Hand 1 is Kh Ks 0c 8h 6d 6h 4s which is a TWO_PAIR [Kh Ks 6d 6h 0c ]
+Hand 2 is Kc Kh 0s 9c 7d 6d 6h which is a TWO_PAIR [Kc Kh 6d 6h 0s ]    
+{Tie}
+
+
+Ac Ks Kh 6d 8h 6h 4s; 7d Kh Kc 0s 7d 6h Jc
+Hand 1 is Ac Kh Ks 8h 6d 6h 4s which is a TWO_PAIR [Kh Ks 6d 6h Ac ]
+Hand 2 is Kc Kh Jc 0s 7d 6h which is a PAIR [Kc Kh Jc 0s 7d ]   
+{Hand 1 wins: ranking} 
+
+Kc Ks Kh 0d 8h 6h 4s; 0d Kh Kc Ks 3d 6h 9c
+Hand 1 is Kc Kh Ks 0d 8h 6h 4s which is a THREE_OF_A_KIND [Kc Kh Ks 0d 8h ]
+Hand 2 is Kc Kh Ks 0d 9c 6h 3d which is a THREE_OF_A_KIND [Kc Kh Ks 0d 9c ]   
+{Hand 2 wins: 4 card} 
+
+Kc Qs Kh 0d 8h Jh 9s; Ad Kh Qc Ks 6h 9c Jd
+Hand 1 is Kc Kh Qs Jh 0d 9s 8h which is a STRAIGHT [Kc Qs Jh 0d 9s ]
+Hand 2 is Ad Kh Ks Qc Jd 9c 6h which is a PAIR [Kh Ks Ad Qc Jd ]   
+{Hand 1 wins: ranking}
+
+Kc Ks Kh 0d 8h Jh 9s; Ad 2h 3c Ks 5h 4c Jd
+Hand 1 is Kc Kh Ks Jh 0d 9s 8h which is a THREE_OF_A_KIND [Kc Kh Ks Jh 0d ]
+Hand 2 is Ad Ks Jd 5h 4c 3c 2h which is a STRAIGHT [5h 4c 3c 2h Ad ]   
+{Hand 2 wins: ranking}
+
+Ks Kd Kh 0s 7s Qs 9d; Ad 2c 3s 5h 4c 2d 2h
+Hand 1 is Kd Kh Ks Qs 0s 9d 7s which is a THREE_OF_A_KIND [Kd Kh Ks Qs 0s ]
+Hand 2 is Ad 5h 4c 3s 2c 2d 2h which is a STRAIGHT [5h 4c 3s 2c Ad ]   
+{Hand 2 wins: ranking}
+
+Ks Js Kh 0s 9h Qs 9s; Ad 2h 2c 2s 5h 4c 2d
+Hand 1 is Kh Ks Qs Js 0s 9h 9s which is a STRAIGHT_FLUSH [Ks Qs Js 0s 9s ]
+Hand 2 is Ad 5h 4c 2c 2d 2h 2s which is a FOUR_OF_A_KIND [2c 2d 2h 2s Ad ]   
+{Hand 1 wins: ranking} 
+
+Ks Js Kh 0s 7s Qs 9d; Ad 2h 2c 2s 5h 4c 2d
+Hand 1 is Kh Ks Qs Js 0s 9d 7s which is a FLUSH [Ks Qs Js 0s 7s ]
+Hand 2 is Ad 5h 4c 2c 2d 2h 2s which is a FOUR_OF_A_KIND [2c 2d 2h 2s Ad ]   {Hand 2 wins: ranking} 
+
+
+
+Kc 4c Kh 0c 7c 6d 9c; Ad 2h 3c 2s 4c 2d 5h
+Hand 1 is Kc Kh 0c 9c 7c 6d 4c which is a FLUSH [Kc 0c 9c 7c 4c ]
+Hand 2 is Ad 5h 4c 3c 2d 2h 2s which is a STRAIGHT [5h 4c 3c 2d Ad ]   
+{Hand 1 wins: ranking} 
+
+
+Ks 4s Kh 0s 7s 4d Kd; Ad Ah 3c 3d 2d 5s 3h
+Hand 1 is Kd Kh Ks 0s 7s 4d 4s which is a FULL_HOUSE [Kd Kh Ks 4d 4s ]
+Hand 2 is Ad Ah 5s 3c 3d 3h 2d which is a FULL_HOUSE [3c 3d 3h Ad Ah ]   
+{Hand 1 wins: 0 card}
+
+
+
+
+
